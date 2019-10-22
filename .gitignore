@@ -76,6 +76,8 @@ docs/_build/
 
 # PyBuilder
 target/
+Scripts/
+tcl/
 
 
 ### Django ###
