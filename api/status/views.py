@@ -1,5 +1,6 @@
 from rest_framework.response import Response
 from rest_framework.views import APIView
+from rest_framework import generics
 
 from .models import Status
 from .serializers import StatusSerializer
@@ -17,3 +18,4 @@ class StatusListSearchAPIView(APIView):
         qs = Status.objects.all()
         serializer = StatusSerializer(qs, many=True)
         return Response(serializer.data)
+    
